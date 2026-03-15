@@ -135,13 +135,13 @@ export default function Apply() {
                 className={`surface-card p-6 ${
                   result.status === "approved" ? "border-l-4 border-l-primary bg-primary/5" :
                   result.status === "rejected" ? "border-l-4 border-l-destructive bg-destructive/5" :
-                  "border-l-4 border-l-yellow-500 bg-yellow-500/5"
+                  "border-l-4 border-l-warning bg-warning/5"
                 }`}
               >
                 <div className="flex items-center gap-3 mb-4">
                   {result.status === "approved" && <CheckCircle className="h-6 w-6 text-primary" />}
                   {result.status === "rejected" && <XCircle className="h-6 w-6 text-destructive" />}
-                  {result.status === "review" && <Clock className="h-6 w-6 text-yellow-500" />}
+                  {result.status === "review" && <Clock className="h-6 w-6 text-warning" />}
                   <h3 className="text-lg font-bold capitalize">{result.status === "review" ? "Under Review" : result.status}</h3>
                 </div>
 

@@ -51,7 +51,7 @@ export default function Profile() {
     switch (status) {
       case "approved": return <Badge className="bg-primary/10 text-primary border-primary/20">Approved</Badge>;
       case "rejected": return <Badge variant="destructive" className="bg-destructive/10 text-destructive border-destructive/20">Rejected</Badge>;
-      default: return <Badge className="bg-yellow-500/10 text-yellow-600 border-yellow-500/20">Under Review</Badge>;
+      default: return <Badge className="bg-warning/10 text-warning-foreground border-warning/20">Under Review</Badge>;
     }
   };
 
@@ -84,7 +84,7 @@ export default function Profile() {
                 className={`surface-card p-5 ${
                   app.status === "approved" ? "border-l-4 border-l-primary" :
                   app.status === "rejected" ? "border-l-4 border-l-destructive" :
-                  "border-l-4 border-l-yellow-500"
+                  "border-l-4 border-l-warning"
                 }`}
               >
                 <div className="flex items-start justify-between gap-4">
