@@ -58,7 +58,7 @@ export default function Home() {
               { icon: Zap, title: "Instant Decisions", desc: "Get approved, reviewed, or clear rejection reasons in under 10 seconds." },
               { icon: Shield, title: "Transparent Logic", desc: "Every decision comes with a clear explanation. No black boxes." },
             ].map((f, i) => (
-              <motion.div key={f.title} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 * i, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              <motion.div key={f.title} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 * i, duration: 0.5, ease: easeOut }}
                 className="surface-card p-6 hover:shadow-glow transition-all duration-300 hover:-translate-y-[1px]">
                 <f.icon className="h-8 w-8 text-primary mb-4" />
                 <h3 className="text-lg font-semibold mb-2">{f.title}</h3>
