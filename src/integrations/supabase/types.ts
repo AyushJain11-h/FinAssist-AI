@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      loan_applications: {
+        Row: {
+          created_at: string
+          credit_score: number
+          details: Json | null
+          employment: string
+          full_name: string
+          id: string
+          income: number
+          loan_amount: number
+          reason: string
+          status: string
+          tenure: number
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          credit_score?: number
+          details?: Json | null
+          employment?: string
+          full_name: string
+          id?: string
+          income?: number
+          loan_amount?: number
+          reason?: string
+          status?: string
+          tenure?: number
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          credit_score?: number
+          details?: Json | null
+          employment?: string
+          full_name?: string
+          id?: string
+          income?: number
+          loan_amount?: number
+          reason?: string
+          status?: string
+          tenure?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
