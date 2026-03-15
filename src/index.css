@@ -26,6 +26,8 @@
     --input: 240 5.9% 90%;
     --ring: 142 70% 45%;
     --radius: 0.75rem;
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 92% 20%;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
