@@ -11,6 +11,11 @@ import Auth from "./pages/Auth";
 import Apply from "./pages/Apply";
 import Profile from "./pages/Profile";
 import Contact from "./pages/Contact";
+import GovernmentSchemes from "./pages/GovernmentSchemes";
+import FDPlanner from "./pages/FDPlanner";
+import Insurance from "./pages/Insurance";
+import AIAdvisor from "./pages/AIAdvisor";
+import EligibilityChecker from "./pages/EligibilityChecker";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +34,11 @@ const App = () => (
               <Route path="/auth" element={<Auth />} />
               <Route path="/apply" element={<ProtectedRoute><Apply /></ProtectedRoute>} />
               <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+              <Route path="/schemes" element={<GovernmentSchemes />} />
+              <Route path="/fd-planner" element={<FDPlanner />} />
+              <Route path="/insurance" element={<Insurance />} />
+              <Route path="/ai-advisor" element={<ProtectedRoute><AIAdvisor /></ProtectedRoute>} />
+              <Route path="/eligibility" element={<EligibilityChecker />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
