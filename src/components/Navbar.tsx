@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Bot, Menu, X, LogOut } from "lucide-react";
 import { useState } from "react";
 import ThemeToggle from "@/components/ThemeToggle";
-import { useState } from "react";
 
 const publicLinks = [
   { to: "/", label: "Home" },
