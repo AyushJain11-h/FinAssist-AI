@@ -27,7 +27,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <AuthProvider>
-          <div>
+          <div className="min-h-screen">
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
