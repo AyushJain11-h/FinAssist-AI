@@ -1,7 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { Button } from "@/components/ui/button";
-import { Bot, Menu, X, LogOut, ChevronDown } from "lucide-react";
+import { Bot, Menu, X, LogOut } from "lucide-react";
+import { useState } from "react";
+import ThemeToggle from "@/components/ThemeToggle";
 import { useState } from "react";
 
 const publicLinks = [
