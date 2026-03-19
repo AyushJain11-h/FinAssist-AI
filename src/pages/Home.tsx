@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Bot, Zap, Shield, ArrowRight, MessageSquare, Landmark, PiggyBank, ShieldCheck, Sparkles, ClipboardCheck, TrendingUp } from "lucide-react";
+import { Zap, Shield, ArrowRight, MessageSquare, Landmark, PiggyBank, ShieldCheck, Sparkles, ClipboardCheck, TrendingUp, Bot } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { motion } from "framer-motion";
 
 const easeOut: [number, number, number, number] = [0.16, 1, 0.3, 1];
