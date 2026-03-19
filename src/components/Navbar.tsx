@@ -48,12 +48,13 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+          <ThemeToggle />
           {user ? (
-            <Button variant="ghost" size="sm" onClick={handleSignOut} className="ml-2 text-xs">
+            <Button variant="ghost" size="sm" onClick={handleSignOut} className="text-xs">
               <LogOut className="h-3.5 w-3.5 mr-1" /> Sign Out
             </Button>
           ) : (
-            <Button size="sm" onClick={() => navigate("/auth")} className="ml-2 text-xs">Get Started</Button>
+            <Button size="sm" onClick={() => navigate("/auth")} className="text-xs">Get Started</Button>
           )}
         </div>
 
