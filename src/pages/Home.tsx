@@ -115,7 +115,7 @@ export default function Home() {
       <footer className="border-t border-border py-10 px-4">
         <div className="container mx-auto max-w-4xl flex flex-col items-center gap-4 text-center">
           <div className="flex items-center gap-2">
-            <Bot className="h-4 w-4 text-primary" />
+            <img src={logo} alt="FinAssist AI" className="h-5 w-5" />
             <span className="text-sm font-semibold">FinAssist AI</span>
           </div>
           <p className="text-sm text-muted-foreground">Developed by <span className="font-semibold text-foreground">Ayush Jain</span></p>
