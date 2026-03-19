@@ -1,7 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { Button } from "@/components/ui/button";
-import { Bot, Menu, X, LogOut } from "lucide-react";
+import { Menu, X, LogOut } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { useState } from "react";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -36,7 +37,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <Bot className="h-5 w-5 text-primary" />
+          <img src={logo} alt="FinAssist AI" className="h-6 w-6" />
           <span className="text-sm font-bold tracking-tight">FinAssist AI</span>
         </Link>
 
