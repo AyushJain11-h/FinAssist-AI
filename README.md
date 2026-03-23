@@ -152,7 +152,7 @@ Based on:
 
 ### Backend & Cloud
 
-* Lovable Cloud (Database + Authentication + Edge Functions)
+* Database + Authentication + Edge Functions
 
 ### AI Integration
 
