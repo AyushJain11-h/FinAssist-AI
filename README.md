@@ -253,4 +253,4 @@ If you like this project:
 
 ---
 
-**Made with ❤️ by Ayush Jain**
+**Made by Ayush Jain**
